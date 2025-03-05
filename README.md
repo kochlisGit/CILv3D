@@ -7,3 +7,5 @@ TODOs
 3. Collect Data
 4. Models
 5. Train.py files Description
+6. Video Demo somewhere
+7. Future Work
