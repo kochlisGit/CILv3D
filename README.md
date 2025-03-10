@@ -56,6 +56,13 @@ For more advanced changes you should modify the: **WeatherSettings**, **SensorBu
 These files are located in the ```src/simulators/carla``` directory
 ## Video Demonstration
 
+## Implemented Models
+
+- CILv2 (The original CIL++ architecture, described in [CIL++](https://github.com/yixiao1/CILv2_multiview)) 
+- CILv2 with Video Sequences
+- CILv2 with Uniformer
+- CILv3D
+
 Watch our model in action:
 
 [![CILv3D Demo](https://img.youtube.com/vi/65k9P3mIkcY/0.jpg)](https://www.youtube.com/watch?v=65k9P3mIkcY)
