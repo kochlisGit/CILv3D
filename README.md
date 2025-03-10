@@ -54,7 +54,6 @@ enable_dynamic_weather_after_episode = 3   # Randomize weather after episode 3
 ```
 For more advanced changes you should modify the: **WeatherSettings**, **SensorBuilderSettings**, **SimulationSettings** or **TrafficSettings** according do your needs.
 These files are located in the ```src/simulators/carla``` directory
-## Video Demonstration
 
 ## Implemented Models
 
@@ -62,6 +61,8 @@ These files are located in the ```src/simulators/carla``` directory
 - CILv2 with Video Sequences
 - CILv2 with Uniformer
 - CILv3D
+
+## Video Demonstration
 
 Watch our model in action:
 
