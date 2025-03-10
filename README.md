@@ -1,5 +1,5 @@
 # CILv3D
-This repository contains the implementation described in the paper: CILv3D - Scaling Multi-Frame Transformers for End-to-End Driving
+This repository contains the implementation described in the paper: CILv3D - Scaling Multi-Frame Transformers for End-to-End Driving.
 
 **CILv3D** is a state-of-the-art vision-based end-to-end controller for autonomous driving, designed to improve generalization, stability, and driving performance using multi-view video inputs and advanced transformer architectures. Built on the CARLA simulator, it achieves superior results in complex driving scenarios while reducing training time and computational costs.
 
@@ -12,18 +12,18 @@ This repository contains the implementation described in the paper: CILv3D - Sca
 **This work was presented at [ICAART 2025](https://icaart.scitevents.org/). Read the full paper [here](https://github.com/kochlisGit/CILv3D/blob/main/Scaling_Multi_Frame_Transformers_for_End_to_End_Driving.pdf).**
 
 ## Requirements
-numpy>=1.21  
-tensorflow>=2.12  
-tensorflow-addons>=0.22  
-keras-cv-attention-models>=1.3  
-torch>=2.0  
-torchvision>=0.15  
-opencv-python  
-scikit-learn>=1.3  
-pandas>=2.0  
-matplotlib>=3.7  
-tqdm>=4.66   
-CARLA 0.9.15                
+- numpy>=1.21  
+- tensorflow>=2.12  
+- tensorflow-addons>=0.22  
+- keras-cv-attention-models>=1.3  
+- torch>=2.0  
+- torchvision>=0.15  
+- opencv-python  
+- scikit-learn>=1.3  
+- pandas>=2.0  
+- matplotlib>=3.7  
+- tqdm>=4.66   
+- carla==0.9.15                
 
 ## Data Collection
 This guide explains how to collect driving datasets using CARLA simulations.
