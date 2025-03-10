@@ -58,9 +58,67 @@ These files are located in the ```src/simulators/carla``` directory
 ## Implemented Models
 
 - CILv2 (The original CIL++ architecture, described in [CIL++](https://github.com/yixiao1/CILv2_multiview)) 
-- CILv2 with Video Sequences
-- CILv2 with Uniformer
-- CILv3D
+- CILv2 with Video Sequences instead of still images
+- CILv2 with UniFormer backbone for enhanced feature extraction
+- CILv3D (Our proposed model)
+
+## Training the Models
+The training process for the models described in the paper is implemented across several Python scripts, each corresponding to a specific model. Below is an overview of the training pipeline and how to execute it:
+
+**1. Training Scripts** 
+The training scripts are organized as follows:
+
+- train_cilv2.py: Trains the CILv2 model.
+- train_cilv23d.py: Trains the CILv2 with Video Sequences instead of still images
+- train_cilv3.py: Trains theCILv2 with UniFormer backbone for enhanced feature extraction.
+- train_cilv3d.py: Trains the CILv3D model.
+
+**2. Training Process**
+
+The training process involves the following steps:
+
+1. Seed Initialization:
+   - Random seeds are set for reproducibility using random.seed, np.random.seed, and tf.random.set_seed.
+Dataset Loading:
+3. Dataset Loading:
+   - Training data includes image augmentations and control noise.
+   - Validation data is loaded without augmentations.
+3. Model Construction:
+   - The model is built using the build_model function for the specific architecture.
+   - A model summary is printed if verbose=True.
+4. Training Execution:
+   - The TFTrainer class manages training, including learning rate scheduling, early stopping, and checkpointing.
+   - The model is trained using the fit method.
+
+**3. Running the Scripts**
+
+To train a model, run the corresponding script from the command line. For example:
+
+```
+python train_cilv2.py
+```
+
+Each script will:
+
+- Load the dataset.
+- Build the model.
+- Train the model using the specified hyperparameters.
+- Save checkpoints and logs to the directory specified in config.checkpoint_dir.
+
+**4. Post-Training**
+
+After training:
+
+- The trained model and training history are returned by the TFTrainer.fit method.
+- The control normalizer (if used) is saved as a pickle file in the checkpoint directory for later use during inference.
+
+**5. Notes**
+
+- Ensure TensorFlow and other dependencies are installed.
+- Adjust the train_town_list and test_town_list variables to customize the dataset used for training and validation.
+- Modify the configuration parameters in the respective Config classes to experiment with different training setups.
+  
+This training pipeline provides a framework for training and evaluating the various CIL architectures described in the paper. For further details, refer to the individual training scripts and the configuration files.
 
 ## Video Demonstration
 
@@ -85,8 +143,4 @@ If you have any questions, feedback, or collaboration ideas, feel free to reach 
 📧 vkochlia@csd.auth.gr  
 
 👤 **Filippos Moumtzidellis**  
-📧 philipm124@live.com  
-
-TODOs
-4. Models
-5. Train.py files Description
+📧 philipm124@live.com
