@@ -9,7 +9,7 @@ This repository contains the implementation described in the paper: CILv3D - Sca
 - **Enhanced Dataset**: Trained on a diverse CARLA 0.9.15 dataset with dynamic weather, traffic, and pedestrian behavior.
 - **Leaderboard Performance**: Outperforms prior methods (CIL++, CILRL++) in CARLA Leaderboard metrics, including driving score, route completion, and collision reduction.
 
-**This work was presented at [ICAART 2025](https://icaart.scitevents.org/). Read the full paper [here](https://github.com/kochlisGit/CILv3D/blob/main/Scaling_Multi_Frame_Transformers_for_End_to_End_Driving.pdf).**
+**This work was presented at [ICAART 2025](https://icaart.scitevents.org/). Read the full paper [here](https://www.scitepress.org/Papers/2025/131567/131567.pdf).**
 
 ## Requirements
 - numpy>=1.21  
